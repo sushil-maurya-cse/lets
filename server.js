@@ -12,7 +12,7 @@ const connectDB = require('./config/db');
 connectDB();
 //cors
 const corsOptions={
-    origin: 'https://sushilthelearner.github.io/FrontEnd--letshare/'
+    origin: 'https://sushilthelearner.github.io'
 }
 app.use(cors(corsOptions));
 
