@@ -4,7 +4,7 @@ const app = express();
 const path = require('path');
 const cors = require('cors');
 
-const PORT=process.env.PORT || https://letshare-file-with-an-ease.herokuapp.com;
+const PORT=process.env.PORT || 3000;
 app.use(express.static('public'));
 app.use(express.json());
 const connectDB = require('./config/db');
@@ -12,7 +12,7 @@ const connectDB = require('./config/db');
 connectDB();
 //cors
 const corsOptions={
-    origin: process.env.Allowed_Client.split(',')
+    origin: 'https://sushilthelearner.github.io/FrontEnd--letshare/'
 }
 app.use(cors(corsOptions));
 
