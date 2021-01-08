@@ -10,7 +10,7 @@ const nodemailer = require('nodemailer');
         }
     });
     let info= await transporter.sendMail({
-        from:`LetsShare <${from}>`,
+        from:`LetShare-Make_Sharing_Easy <${from}>`,
         to:to,
         subject:subject,
         text:text,
