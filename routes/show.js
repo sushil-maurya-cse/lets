@@ -34,7 +34,7 @@ router.get('/:uuid', async (req, res) => {
         if(!file) {
             return res.render('download', { error: 'Oh Shit..Link Expired sorry...'});
         } 
-        return res.render('download', { uuid: file.uuid, fileName: file.filename, fileSize: file.size, downloadLink: `${process.env.APP_BASE_URL}/files/download/${file.uuid}` });
+        return res.render('download', { uuid: file.uuid, fileName: file.filename, fileSize: file.size, downloadLink: `${process.env.App_base_url}/files/download/${file.uuid}` });
     } catch(err) {
         return res.render('download', { error: 'Something went wrong.'});
     }
